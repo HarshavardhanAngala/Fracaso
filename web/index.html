@@ -1,0 +1,369 @@
+<!DOCTYPE html><html lang="en" data-bs-theme="light" data-pwa="true">
+<head>
+    <meta charset="utf-8">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+
+    <!-- SEO Meta Tags -->
+    <title>Fracaso</title>
+    <meta name="description" content="Cartzilla - Multipurpose Bootstrap E-Commerce HTML Template">
+    <meta name="keywords" content="online shop, e-commerce, online store, market, multipurpose, product landing, cart, checkout, ui kit, light and dark mode, bootstrap, html5, css3, javascript, gallery, slider, mobile, pwa">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Webmanifest + Favicon / App icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="assets/app-icons/icon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/app-icons/icon-180x180.png">
+
+    <!-- Theme switcher (color modes) -->
+    <script src="assets/js/theme-switcher.js"></script>
+
+    <!-- Preloaded local web font (Inter) -->
+    <link rel="preload" href="assets/fonts/inter-variable-latin.woff2" as="font" type="font/woff2" crossorigin="">
+
+    <!-- Font icons -->
+    <link rel="preload" href="assets/icons/cartzilla-icons.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="stylesheet" href="assets/icons/cartzilla-icons.min.css">
+    <link rel="stylesheet" href="assets/css/stickyfooter.css">
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendor/simplebar/simplebar.min.css">
+    <link rel="stylesheet" href="assets/vendor/choices.js/choices.min.css">
+
+    <!-- Bootstrap + Theme styles -->
+    <link rel="preload" href="assets/css/theme.min.css" as="style">
+    <link rel="preload" href="assets/css/theme.rtl.min.css" as="style">
+    <link rel="stylesheet" href="assets/css/theme.min.css" id="theme-styles">
+
+    <!-- Customizer -->
+    <script src="assets/js/customizer.min.js"></script>
+  </head>
+  <div style="background-color: #7baf42; padding: 10px;">
+    <marquee 
+      style="color: white; font-weight: bold;" 
+      width="100%" 
+      direction="left" 
+      height="20px">
+      Flat Rs 250 OFF on your Purchase. Use PromoCode: HEALTHY250
+    </marquee>
+  </div>
+  
+
+
+  <!-- Body -->
+  <body>
+
+    <!-- Shopping cart offcanvas -->
+    <div class="offcanvas offcanvas-end pb-sm-2 px-sm-2" id="shoppingCart" tabindex="-1" aria-labelledby="shoppingCartLabel" style="width: 500px">
+
+      <!-- Header -->
+      <div class="offcanvas-header flex-column align-items-start py-3 pt-lg-4">
+        <div class="d-flex align-items-center justify-content-between w-100 mb-3 mb-lg-4">
+          <h4 class="offcanvas-title" id="shoppingCartLabel">Shopping cart</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="alert alert-success text-dark-emphasis fs-sm border-0 rounded-4 mb-0" role="alert">
+          Congratulations 🎉
+        </div>
+      </div>
+
+      <!-- Items -->
+      <div class="offcanvas-body d-flex flex-column gap-4 pt-2">
+
+        <!-- Item -->
+        <div class="d-flex align-items-center">
+          <a class="position-relative flex-shrink-0" href="shop-product-grocery.html">
+            <span class="badge text-bg-danger position-absolute top-0 start-0 z-2 mt-0 ms-0">-$2.79</span>
+            <img src="assets/img/shop/grocery/thumbs/01.png" width="110" alt="Thumbnail">
+          </a>
+          <div class="w-100 ps-3">
+            <h5 class="fs-sm fw-medium lh-base mb-2">
+              <a class="hover-effect-underline" href="shop-product-grocery.html">Fresh orange Klementina, Spain</a>
+            </h5>
+            <div class="h6 pb-1 mb-2">$3.12</div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="count-input rounded-pill">
+                <button type="button" class="btn btn-icon btn-sm" data-decrement="" aria-label="Decrement quantity">
+                  <i class="ci-minus"></i>
+                </button>
+                <input type="number" class="form-control form-control-sm" value="3" readonly="">
+                <button type="button" class="btn btn-icon btn-sm" data-increment="" aria-label="Increment quantity">
+                  <i class="ci-plus"></i>
+                </button>
+              </div>
+              <button type="button" class="btn-close fs-sm" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-sm" data-bs-title="Remove" aria-label="Remove from cart"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="offcanvas-header flex-column align-items-start">
+        <div class="d-flex align-items-center justify-content-between w-100 mb-3 mb-md-4">
+          <span class="text-light-emphasis">Subtotal:</span>
+          <span class="h6 mb-0">$68.91</span>
+        </div>
+        <div class="d-flex w-100 gap-3">
+          <!-- <a class="btn btn-lg btn-secondary w-100 rounded-pill" href="checkout-v2-cart.html">View cart</a> -->
+          <a class="btn btn-lg btn-primary w-100 rounded-pill" href="checkout.html">Checkout</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Delivey options offcanvas -->
+    <div class="offcanvas offcanvas-end pb-sm-2 px-sm-2" id="deliveryOptions" tabindex="-1" aria-labelledby="deliveryOptionsLabel" style="width: 500px">
+
+      <!-- Footer -->
+      <div class="offcanvas-header">
+        <button type="button" class="btn btn-lg btn-primary w-100 rounded-pill">Confirm address</button>
+      </div>
+    </div>
+
+
+    <!-- Site menu offcanvas -->
+    <nav class="offcanvas offcanvas-start" id="navbarNav" tabindex="-1" aria-labelledby="navbarNavLabel">
+      <div class="offcanvas-header py-3">
+        <h5 class="offcanvas-title" id="navbarNavLabel">Fracaso</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body pt-0 pb-3">
+        <!-- Navbar nav -->
+          <div class="accordion" id="navigation">
+            <!-- Rest of the menu -->
+            <div class="accordion-item border-0">
+              <div class="accordion-header" id="headingHome">
+                <button type="button" class="accordion-button animate-underline fw-medium collapsed py-2" data-bs-toggle="collapse" data-bs-target="#home" aria-expanded="false" aria-controls="home">
+                  <span class="d-block animate-target py-1">Home</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Account button visible on screens < 768px wide (md breakpoint) -->
+      <div class="offcanvas-header flex-column align-items-start d-md-none">
+        <a class="btn btn-lg btn-outline-secondary w-100 rounded-pill" href="account-signin.html">
+          <i class="ci-user fs-lg ms-n1 me-2"></i>
+          Account
+        </a>
+      </div>
+    </nav>
+
+
+    <!-- Navigation bar (Page header) -->
+    <header class="navbar navbar-expand navbar-sticky sticky-top d-block bg-body z-fixed py-1 py-lg-0 py-xl-1 px-0" data-sticky-element="">
+      <div class="container justify-content-center py-2 py-lg-3 d-flex align-items-center">
+        <a class="navbar-brand fs-2 p-0 pe-lg-2 pe-xxl-0 me-0 me-sm-3 me-md-4 me-xxl-5" href="index.html">
+          <img src="images/Fracaso-logo.png" alt="Fracaso Logo" style="height: 60px;">
+        </a>
+        
+        <!-- <div class="d-flex align-items-center gap-md-1 gap-lg-2 ms-auto"> -->
+          <!-- <button type="button" class="btn btn-icon fs-xl btn-outline-secondary position-relative border-0 rounded-circle animate-scale" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="shoppingCart" aria-label="Shopping cart">
+            <span class="position-absolute top-0 start-100 badge fs-xs text-white rounded-pill ms-n3 z-2" style="background-color: green; --cz-badge-padding-y: .25em; --cz-badge-padding-x: .42em">8</span>
+            <i class="ci-shopping-cart animate-target"></i>
+          </button> -->
+        <!-- </div> -->
+      </div>
+    </header>
+    
+    <br>
+<br>
+    <br>
+
+    <!-- Page content -->
+    <main class="content-wrapper">
+
+      <!-- Hero slider -->
+      <section class="position-relative">
+        <div class="swiper position-absolute top-0 start-0 w-100 h-100" data-swiper="{
+          &quot;effect&quot;: &quot;fade&quot;,
+          &quot;loop&quot;: true,
+          &quot;speed&quot;: 400,
+          &quot;pagination&quot;: {
+            &quot;el&quot;: &quot;.swiper-pagination&quot;,
+            &quot;clickable&quot;: true
+          },
+          &quot;autoplay&quot;: {
+            &quot;delay&quot;: 5500,
+            &quot;disableOnInteraction&quot;: false
+          }
+        }" data-bs-theme="dark">
+          <div class="swiper-wrapper">
+        </div>
+        <div class="d-md-none" style="height: 380px"></div>
+        <div class="d-none d-md-block d-lg-none" style="height: 420px"></div>
+        <div class="d-none d-lg-block d-xl-none" style="height: 500px"></div>
+        <div class="d-none d-xl-block d-xxl-none" style="height: 560px"></div>
+        <div class="d-none d-xxl-block" style="height: 624px"></div>
+      </section>
+      <!-- Categories + Popular products -->
+      <section class="container pb-5 mb-2 mb-sm-3 mb-lg-4 mb-xl-5">
+        <div class="row">
+
+          <!-- Categories list -->
+          <div class="col-lg-3 pb-2 pb-sm-3 pb-md-4 mb-5 mb-lg-0">
+            <h2 class="h3 border-bottom pb-3 pb-md-4 mb-4">Categories</h2>
+            <div class="row nav g-3 g-sm-4">
+              <div class="col-sm-6 col-md-4 col-lg-12 d-flex">
+                <div class="position-relative d-flex min-w-0 align-items-center">
+                  <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-body-tertiary rounded-circle" style="width: 56px; height: 56px">
+                    <img src="images/tea.jpg" width="40" alt="Image">
+                  </div>
+                  <div class="min-w-0 ps-3">
+                    <a class="nav-link animate-underline stretched-link fs-base fw-semibold p-0 mb-1" href="shop-catalog-grocery.html">
+                      <span class="animate-target text-truncate">Tea</span>
+                    </a>
+                    <div class="fs-xs fw-normal text-body-secondary">3 products</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-12 d-flex">
+                <div class="position-relative d-flex min-w-0 align-items-center">
+                  <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-body-tertiary rounded-circle" style="width: 56px; height: 56px">
+                    <img src="images/millet-soup.jpg" width="40" alt="Image">
+                  </div>
+                  <div class="min-w-0 ps-3">
+                    <a class="nav-link animate-underline stretched-link fs-base fw-semibold p-0 mb-1" href="shop-catalog-grocery.html">
+                      <span class="animate-target text-truncate">Millets</span>
+                    </a>
+                    <div class="fs-xs fw-normal text-body-secondary">3 products</div>
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+
+          <div class="col-lg-9">
+            
+
+            <!-- Products grid -->
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 g-4">
+              <!-- Item -->
+              <div class="col">
+                <div class="card product-card h-100 bg-transparent border-0 shadow-none">
+                  <div class="position-relative z-2">
+                    <span class="badge text-white position-absolute top-0 start-0 z-2 mt-1 mt-sm-2 ms-1 ms-sm-2" style="background-color: green;">-72%</span>
+                    <button type="button" class="btn btn-icon btn-sm btn-secondary animate-pulse fs-sm bg-body border-0 position-absolute top-0 end-0 z-2 mt-1 mt-sm-2 me-1 me-sm-2" aria-label="Add to Wishlist">
+                      <i class="ci-heart animate-target"></i>
+                    </button>
+                    <a class="d-block p-2 p-lg-3" href="shop-product-grocery.html">
+                      <div class="ratio" style="--cz-aspect-ratio: calc(160 / 191 * 100%)">
+                        <img src="images/millet-soup.jpg" alt="Image">
+                      </div>
+                    </a>
+                    <div class="position-absolute w-100 start-0 bottom-0">
+                      <div class="d-flex justify-content-end px-2 px-lg-3 pb-2 pb-lg-3">
+                        <div class="count-input count-input-collapsible collapsed justify-content-between w-100 bg-transparent border-0 rounded-2">
+                          <button type="button" class="btn btn-icon btn-sm btn-primary" data-decrement="" aria-label="Decrement quantity">
+                            <i class="ci-minus fs-sm"></i>
+                          </button>
+                          <input type="number" class="form-control form-control-sm bg-primary text-white w-100" value="0" min="0" readonly="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body pt-0 px-1 px-md-2 px-lg-3 pb-2">
+                    <div class="h6 mb-2">Rs 20 <del class="fs-sm fw-normal text-body-tertiary ms-1">Rs 70</del></div>
+                    <h3 class="fs-sm lh-base mb-0">
+                      <a class="hover-effect-underline fw-normal" href="shop-product-grocery.html">Tridosha Millet soup</a>
+                    </h3>
+                    <!-- Add to Cart Button -->
+               <!-- Quantity Selector Container -->
+               <div class="position-absolute w-100 start-0 bottom-0">
+                      <div class="d-flex justify-content-end px-2 px-lg-3 pb-2 pb-lg-3">
+                        <div class="count-input count-input-collapsible collapsed justify-content-between w-100 bg-transparent border-0 rounded-2">
+                          <button type="button" class="btn btn-icon btn-sm btn-primary" data-decrement="" aria-label="Decrement quantity">
+                            <i class="ci-minus fs-sm"></i>
+                          </button>
+                          <input type="number" class="form-control form-control-sm bg-primary text-white w-100" value="0" min="0" readonly="">
+                          <button type="button" class="product-card-button btn btn-icon btn-sm btn-secondary ms-auto" data-increment="" aria-label="Increment quantity">
+                            <span data-count-input-value=""></span>
+                            <i class="ci-plus fs-sm"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div class="fs-xs text-body-secondary px-1 px-md-2 px-lg-3 pb-2 pb-md-3">190 g</div>
+                </div>
+              </div>              
+
+              <!-- Item -->
+              <div class="col">
+                <div class="card product-card h-100 bg-transparent border-0 shadow-none">
+                  <div class="position-relative z-2">
+                    <span class="badge text-white position-absolute top-0 start-0 z-2 mt-1 mt-sm-2 ms-1 ms-sm-2" style="background-color: green;">-70%</span>
+                    <button type="button" class="btn btn-icon btn-sm btn-secondary animate-pulse fs-sm bg-body border-0 position-absolute top-0 end-0 z-2 mt-1 mt-sm-2 me-1 me-sm-2" aria-label="Add to Wishlist">
+                      <i class="ci-heart animate-target"></i>
+                    </button>
+                    <a class="d-block p-2 p-lg-3" href="shop-product-grocery.html">
+                      <div class="ratio" style="--cz-aspect-ratio: calc(160 / 191 * 100%)">
+                        <img src="images/tea.jpg" alt="Image">
+                      </div>
+                    </a>
+                    <div class="position-absolute w-100 start-0 bottom-0">
+                      <div class="d-flex justify-content-end px-2 px-lg-3 pb-2 pb-lg-3">
+                        <div class="count-input count-input-collapsible collapsed justify-content-between w-100 bg-transparent border-0 rounded-2">
+                          <button type="button" class="btn btn-icon btn-sm btn-primary" data-decrement="" aria-label="Decrement quantity">
+                            <i class="ci-minus fs-sm"></i>
+                          </button>
+                          <input type="number" class="form-control form-control-sm bg-primary text-white w-100" value="0" min="0" readonly="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body pt-0 px-1 px-md-2 px-lg-3 pb-2">
+                    <div class="h6 mb-2">Rs 15 <del class="fs-sm fw-normal text-body-tertiary ms-1">Rs 50</del></div>
+                    <h3 class="fs-sm lh-base mb-0">
+                      <a class="hover-effect-underline fw-normal" href="shop-product-grocery.html">Tridosha Tea</a>
+                    </h3>
+                    <!-- Add to Cart Button -->
+                    <div class="mt-3">
+                      <button type="button" class="btn w-100" style="background-color: #497e11; color:white;" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="fs-xs text-body-secondary px-1 px-md-2 px-lg-3 pb-2 pb-md-3">110 Ml</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+         <!-- Sticky Cart Footer -->
+  <footer class="cart-footer">
+    <div class="container">
+      <span class="cart-summary">Total: $123.45</span>
+      <button class="btn btn-primary">View Cart</button>
+    </div>
+  </footer>
+
+    </main>
+
+   
+    <footer class="text-center p-3" style="background-color: #497e11; color: white;">
+      <p class="mb-0">Powered by Fracaso Smart Tech Pvt Ltd</p>
+      <p class="mb-0">For support, call: +91 7766776677</p>
+    </footer>
+  
+  
+    <!-- Vendor scripts -->
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/simplebar/simplebar.min.js"></script>
+    <script src="assets/vendor/choices.js/choices.min.js"></script>
+
+    <!-- Bootstrap + Theme scripts -->
+    <script src="assets/js/theme.min.js"></script>
+  
+
+</body>
+</html>
